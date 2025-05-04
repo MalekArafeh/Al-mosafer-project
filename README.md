@@ -1,3 +1,4 @@
+
 # 🧪 AlMosafer Automation Testing Suite 🌐
 
 Welcome to the **AlMosafer Test Automation Suite**! 🎉  
@@ -51,3 +52,87 @@ Here's a breakdown of each automated test case:
 ---
 
 ## 📂 Project Structure
+
+```
+📦 src
+ ┣ 📂 Tests
+ ┃ ┣ 📜 AlMosaferTest.java    # Main test suite with all TestNG test methods
+ ┃ ┗ 📜 TestData.java         # Class containing reusable test data & randomization logic
+```
+
+- `AlMosaferTest.java` – Contains organized test methods using TestNG annotations like `@Test`, `@BeforeMethod`, `@AfterMethod`.
+- `TestData.java` – Stores reusable language options, city names, expected values, and logic to select random elements.
+
+---
+
+## 🔧 How to Run the Tests
+
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/your-username/almosafer-test-suite.git
+   cd almosafer-test-suite
+   ```
+
+2. **Open in your IDE** (e.g., IntelliJ IDEA or Eclipse)
+
+3. **Ensure Java, TestNG, and Selenium are set up**
+
+4. **Update ChromeDriver path** if needed
+
+5. **Run Tests**:
+   - Right-click `AlMosaferTest.java` → Run as TestNG Suite
+   - Or use Maven:
+     ```bash
+     mvn test
+     ```
+
+---
+
+## 💡 Design Highlights
+
+- 🧠 **Smart Date Handling**: Uses `LocalDate.now().plusDays(1)` and `plusDays(2)` to always get valid dynamic dates.
+- 🔁 **Randomization**: Language and hotel city are chosen randomly for every run to simulate diverse user scenarios.
+- 🔍 **Language Sensitivity**: The script adapts hotel search input based on the current language (e.g., “Dubai” in English vs. “دبي” in Arabic).
+- 📏 **Assertions**: All validations use `Assert.assertEquals` or `Assert.assertTrue` from TestNG.
+- ♻️ **Reusable Data**: Centralized constants in `TestData.java` reduce redundancy and make the suite easier to maintain.
+
+---
+
+## 📸 Screenshots (Optional Enhancement)
+
+You can enhance test reports by integrating:
+- **Screenshot capture on failure** using Selenium's `TakesScreenshot` interface
+- **Allure Reports** for beautiful test visualization and logs
+
+---
+
+## 🤝 Contributions
+
+Want to improve the project or add more test cases?
+
+- Fork it 🍴  
+- Create your branch 🛠️  
+- Push your code 🚀  
+- Submit a pull request ✅
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – feel free to use, share, and contribute!
+
+---
+
+## 📬 Contact
+
+👤 **Author**: Malek Arafeh  
+📧 Email: [malekarafeh2@gmail.com](mailto:malekarafeh2@gmail.com)  
+🌐 LinkedIn: [linkedin.com/in/malekarafeh](https://www.linkedin.com/in/malekarafeh)
+
+---
+
+## 🌟 Show Your Support
+
+If you found this project helpful, don’t forget to ⭐ the repo!
+
+Thanks for visiting – happy testing! 🎯🧪🚀
